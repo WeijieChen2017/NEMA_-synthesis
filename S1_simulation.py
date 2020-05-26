@@ -25,7 +25,7 @@ def nib_smooth(file_mri, data, fwhm, tag, save_path):
     nibabel.save(smoothed_file, save_path+"fwhm_"+str(idx_fwhm)+"_"+tag+".nii")
     print("fwhm_"+str(idx_fwhm)+"_"+tag+".nii")
 
-name_dataset = "2d_enhanced_sk8R"
+name_dataset = "stick"
 
 for folder_name in ["trainA", "trainB", "testA", "testB"]:
     path = "./pytorch-CycleGAN-and-pix2pix/datasets/"+name_dataset+"/"+folder_name+"/"
